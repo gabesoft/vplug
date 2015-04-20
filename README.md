@@ -1,0 +1,3 @@
+#vplug#
+
+*Vim plugin finder*
