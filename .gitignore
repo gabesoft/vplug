@@ -18,3 +18,5 @@ npm-debug.log
 pids
 results
 tmp
+
+conf/github.json
