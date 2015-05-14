@@ -1,1 +1,0 @@
-{"message":"Validation Failed","errors":[{"message":"the lower bound of the range (99 .. 40) is greater than the upper bound","resource":"Search","field":"q","code":"invalid"}],"documentation_url":"https://developer.github.com/v3/search/"}
