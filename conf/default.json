@@ -3,5 +3,11 @@
         "api": {
             "search": "https://api.github.com/search/repositories"
         }
+    },
+    "userAgent": "Ayne-Finder/0.0.1",
+    "vplugs": {
+        "api": {
+            "create": "http://localhost:8006/vplugs"
+        }
     }
 }
