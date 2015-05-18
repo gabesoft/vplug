@@ -13,14 +13,13 @@
     "good": "^6.1.0",
     "good-console": "^5.0.0",
     "hapi": "^8.4.0",
-    "hiredis": "^0.3.0",
     "mkdirp": "^0.5.0",
     "moment": "^2.10.2",
     "natural": "^0.2.1",
     "nconf": "^0.7.1",
     "redis": "^0.12.1",
     "request": "^2.55.0",
-    "srunner": "^0.1.9",
+    "srunner": "^0.1.10",
     "yargs": "^3.9.0"
   },
   "devDependencies": {
