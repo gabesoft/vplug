@@ -4,10 +4,17 @@
             "search": "https://api.github.com/search/repositories"
         }
     },
+    "keywords": {
+        "api": {
+            "delete": "http://localhost:8006/vplugkeywords",
+            "save": "http://localhost:8006/vplugkeywords"
+        }
+    },
     "userAgent": "Ayne-Finder/0.0.1",
     "vplugs": {
         "api": {
-            "create": "http://localhost:8006/vplugs"
+            "create": "http://localhost:8006/vplugs",
+            "fetch": "http://localhost:8006/vplugs"
         }
     }
 }
