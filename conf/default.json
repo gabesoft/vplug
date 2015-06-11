@@ -10,6 +10,15 @@
             "save": "http://localhost:8006/vplugkeywords"
         }
     },
+    "redis": {
+        "expire": {
+            "unit": "days",
+            "value": 30
+        },
+        "host": "localhost",
+        "port": 6379,
+        "prefix": "vplug-cache"
+    },
     "userAgent": "Ayne-Finder/0.0.1",
     "vplugs": {
         "api": {
