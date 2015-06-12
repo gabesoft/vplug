@@ -16,5 +16,8 @@ $DIR/finder -l 7 -i 8 -s 900
 $DIR/finder -l 6 -i 7 -s 900
 $DIR/finder -l 5 -i 6 -s 900
 $DIR/finder -l 4 -i 5 -s 900
-$DIR/finder -l 3 -i 4 -s 900
+$DIR/finder -l 3 -i 4 -s 700
+$DIR/finder -l 2 -i 3 -s 600
+$DIR/finder -l 1 -i 2 -s 100
+$DIR/finder -l 0 -i 0 -s 50
 
