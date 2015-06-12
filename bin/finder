@@ -1,6 +1,6 @@
-'use strict';
+#!/usr/bin/env node
 
-var runner = require('./runners/finder')
+var runner = require('../lib/runners/finder')
   , moment = require('moment')
   , eyes   = require('eyes')
   , args   = require('yargs')
