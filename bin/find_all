@@ -2,8 +2,10 @@
 
 DIR=`dirname $0`
 
-$DIR/finder -l 120
-$DIR/finder -l 80 -i 119
+# TODO: for > 120 should get forks too
+
+$DIR/finder -l 120 -f
+$DIR/finder -l 80 -i 119 -f
 $DIR/finder -l 70 -i 79
 $DIR/finder -l 60 -i 69
 $DIR/finder -l 50 -i 59

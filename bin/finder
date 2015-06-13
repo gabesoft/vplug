@@ -11,6 +11,8 @@ var runner = require('../lib/runners/finder')
        .describe('i', 'search all repos that have at most the given number of days')
        .alias('s', 'since')
        .describe('s', 'search all repos created since a given number of days')
+       .alias('f', 'fork')
+       .describe('f', 'include forks')
        .alias('h', 'help')
        .describe('h', 'display usage')
   , argv = args.argv;
@@ -34,6 +36,9 @@ if (typeof argv.hi !== 'undefined') {
 if (argv.s) {
     opts.created.end = moment();
     opts.created.start = moment().subtract(argv.s, 'days');
+}
+if (argv.f) {
+    opts.fork = true;
 }
 
 runner(opts);
