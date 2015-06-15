@@ -1,0 +1,9 @@
+{
+    "other": [
+        "https://github.com/fernetbianca/.vimserver",
+        "https://github.com/yanickouellet/vimfiles-windows"
+    ],
+    "plugins": [
+        "https://github.com/junegunn/vim-plug"
+    ]
+}

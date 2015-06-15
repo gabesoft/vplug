@@ -1,0 +1,47 @@
+{
+    "def": {
+        "contents": {
+            "runner": "lib/runners/fetch_contents"
+        },
+        "doc": {
+            "runner": "lib/runners/fetch_doc"
+        },
+        "finder": {
+            "runner": "lib/runners/finder",
+            "sub": [
+                "s:150..,f",
+                "s:100..149,f",
+                "s:10..99|10,f",
+                "s:6..9|1,d:..3600|1200",
+                "s:4..5|1,d:..1200|600",
+                "s:3,d:..2400|100",
+                "s:2,d:..2000|50",
+                "s:1,d:..1200|30",
+                "s:0,d:..1000|10"
+            ]
+        },
+        "readme": {
+            "runner": "lib/runners/fetch_readme"
+        },
+        "tokenize": {
+            "runner": "lib/runners/tokenizer"
+        },
+        "upload": {
+            "runner": "lib/runners/uploader"
+        },
+        "users": {
+            "runner": "lib/runners/fetch_users"
+        }
+    },
+    "run": [
+        "finder.sub",
+        [
+            "users",
+            "doc",
+            "readme",
+            "contents"
+        ],
+        "upload",
+        "tokenize"
+    ]
+}

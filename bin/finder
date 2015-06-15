@@ -5,12 +5,10 @@ var runner = require('../lib/runners/finder')
   , eyes   = require('eyes')
   , args   = require('yargs')
        .usage('Usage: $0 [options]')
-       .alias('l', 'lo')
-       .describe('l', 'search all repos that have at least the given number of stars')
-       .alias('i', 'hi')
-       .describe('i', 'search all repos that have at most the given number of days')
-       .alias('s', 'since')
-       .describe('s', 'search all repos created since a given number of days')
+       .describe('slo', 'search all repos that have at least the given number of stars')
+       .describe('shi', 'search all repos that have at most the given number of days')
+       .describe('clo', 'search all repos created since the given number of days')
+       .describe('chi', 'search all repos created until the given number of days')
        .alias('f', 'fork')
        .describe('f', 'include forks')
        .alias('h', 'help')
@@ -27,16 +25,22 @@ if (argv.h) {
     process.exit(1);
 }
 
-if (typeof argv.lo !== 'undefined') {
-    opts.stars.lo = argv.lo;
+if (typeof argv.slo !== 'undefined') {
+    opts.stars.lo = argv.slo;
 }
-if (typeof argv.hi !== 'undefined') {
-    opts.stars.hi = argv.hi;
+if (typeof argv.shi !== 'undefined') {
+    opts.stars.hi = argv.shi;
 }
-if (argv.s) {
-    opts.created.end = moment();
-    opts.created.start = moment().subtract(argv.s, 'days');
+
+if (argv.chi) {
+    opts.created.end = moment().subtract(argv.chi, 'days');
 }
+
+if (argv.clo) {
+    opts.created.end = opts.created.end || moment();
+    opts.created.start = moment().subtract(argv.clo, 'days');
+}
+
 if (argv.f) {
     opts.fork = true;
 }
