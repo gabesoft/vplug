@@ -24,8 +24,8 @@
     },
     "tasks": {
         "interval": {
-            "unit": "minutes",
-            "value": 30
+            "unit": "hours",
+            "value": 3
         }
     },
     "userAgent": "Ayne-Finder/0.0.1",
