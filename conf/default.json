@@ -22,6 +22,12 @@
         "port": 6379,
         "prefix": "vplug-cache"
     },
+    "tasks": {
+        "interval": {
+            "unit": "minutes",
+            "value": 30
+        }
+    },
     "userAgent": "Ayne-Finder/0.0.1",
     "vplugs": {
         "api": {

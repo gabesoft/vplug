@@ -1,16 +1,27 @@
 'use strict';
 
-var server = new Hapi.Server({})
-  , conf   = require(./conf/store);
-
-
+var Hapi     = require('hapi')
+  , server   = new Hapi.Server({})
+  , Logger   = require('srunner/logger').Logger
+  , log      = new Logger()
+  , chalk    = require('chalk')
+  , conf     = require('./conf/store')
+  , moment   = require('moment')
+  , Runner   = require('./lib/tasks/runner').Runner
+  , interval = moment.duration(
+        conf.get('tasks:interval:value')
+      , conf.get('tasks:interval:unit'))
+  , runner   = new Runner({ interval : interval.asMilliseconds() });
 
 server.connection({ port : conf.get('app:port') || 8007 });
 
 server.start(function (err) {
-    console.log('server started: ',  server.info.uri);
+    log.info('server started ' + chalk.green(server.info.uri));
     if (err) {
         console.log(err);
         throw err;
+    } else {
+        runner.loadTasks();
+        runner.startRunLoop();
     }
 });

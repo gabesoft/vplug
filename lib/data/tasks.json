@@ -7,18 +7,20 @@
             "runner": "lib/runners/fetch_doc"
         },
         "finder": {
-            "runner": "lib/runners/finder",
-            "sub": [
+            "options": [
                 "s:150..,f",
                 "s:100..149,f",
-                "s:10..99|10,f",
-                "s:6..9|1,d:..3600|1200",
-                "s:4..5|1,d:..1200|600",
-                "s:3,d:..2400|100",
-                "s:2,d:..2000|50",
-                "s:1,d:..1200|30",
-                "s:0,d:..1000|10"
-            ]
+                "s:30..99|10,f",
+                "s:10..29|2",
+                "s:6..9|1,d:3600..0|-1200",
+                "s:4..5|1,d:1200..0|-600",
+                "s:3,d:2400..0|-100",
+                "s:2,d:1000..0|-50",
+                "s:1,d:300..0|-30",
+                "s:0,d:100..0|-10"
+            ],
+            "parser": "lib/tasks/search_options",
+            "runner": "lib/runners/finder"
         },
         "readme": {
             "runner": "lib/runners/fetch_readme"
@@ -34,7 +36,7 @@
         }
     },
     "run": [
-        "finder.sub",
+        "finder",
         [
             "users",
             "doc",

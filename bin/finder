@@ -26,10 +26,10 @@ if (argv.h) {
 }
 
 if (typeof argv.slo !== 'undefined') {
-    opts.stars.lo = argv.slo;
+    opts.stars.start = argv.slo;
 }
 if (typeof argv.shi !== 'undefined') {
-    opts.stars.hi = argv.shi;
+    opts.stars.end = argv.shi;
 }
 
 if (argv.chi) {
