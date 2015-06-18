@@ -11,7 +11,8 @@
         "api": {
             "delete": "http://localhost:8006/vplugkeywords",
             "save": "http://localhost:8006/vplugkeywords"
-        }
+        },
+        "chunklen": 5000
     },
     "redis": {
         "expire": {
@@ -24,8 +25,8 @@
     },
     "tasks": {
         "interval": {
-            "unit": "hours",
-            "value": 3
+            "unit": "minutes",
+            "value": 30
         }
     },
     "userAgent": "Ayne-Finder/0.0.1",

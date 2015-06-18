@@ -37,12 +37,10 @@
     },
     "run": [
         "finder",
-        [
-            "users",
-            "doc",
-            "readme",
-            "contents"
-        ],
+        "users",
+        "doc",
+        "readme",
+        "contents",
         "upload",
         "tokenize"
     ]
