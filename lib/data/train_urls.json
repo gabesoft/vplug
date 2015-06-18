@@ -2,6 +2,7 @@
     "other": [
         "https://github.com/aaronlake/vimrc",
         "https://github.com/abo-abo/avy",
+        "https://github.com/brooky-yen/vimrc",
         "https://github.com/ain/.vim",
         "https://github.com/ajaxorg/ace",
         "https://github.com/alexander-yakushev/compliment",
@@ -100,11 +101,16 @@
         "https://github.com/NataliaLKB/learn-git-basics",
         "https://github.com/MarcWeber/vim-git-wiki",
         "https://github.com/pebble/git-deploy",
-        "https://github.com/zhengkai/vimrc"
+        "https://github.com/zhengkai/vimrc",
+        "https://github.com/tpopela/apps2desktop",
+        "https://github.com/xwsoul/SoulVim"
     ],
     "plugins": [
         "https://github.com/29decibel/vim-stringify",
         "https://github.com/aaronbieber/vim-quicktask",
+        "https://github.com/laktek/distraction-free-writing-vim",
+        "https://github.com/kmdsbng/vim-ruby-eval",
+        "https://github.com/aldafu/vim-widl",
         "https://github.com/actionshrimp/vim-xpath",
         "https://github.com/elentok/replace-all.vim",
         "https://github.com/airblade/vim-gitgutter",
