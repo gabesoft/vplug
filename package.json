@@ -21,7 +21,7 @@
     "nconf": "^0.7.1",
     "redis": "^0.12.1",
     "request": "^2.55.0",
-    "srunner": "^0.1.10",
+    "srunner": "^0.1.11",
     "yargs": "^3.9.0"
   },
   "devDependencies": {
