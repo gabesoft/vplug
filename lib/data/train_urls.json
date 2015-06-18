@@ -108,6 +108,7 @@
     "plugins": [
         "https://github.com/29decibel/vim-stringify",
         "https://github.com/aaronbieber/vim-quicktask",
+        "https://github.com/keitheis/vim-plim",
         "https://github.com/laktek/distraction-free-writing-vim",
         "https://github.com/kmdsbng/vim-ruby-eval",
         "https://github.com/aldafu/vim-widl",
