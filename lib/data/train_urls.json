@@ -103,6 +103,9 @@
         "https://github.com/pebble/git-deploy",
         "https://github.com/zhengkai/vimrc",
         "https://github.com/tpopela/apps2desktop",
+        "https://github.com/Anthony25/gnome-terminal-colors-solarized",
+        "https://github.com/amix/vimrc",
+        "https://github.com/RichiH/vcsh",
         "https://github.com/xwsoul/SoulVim"
     ],
     "plugins": [
