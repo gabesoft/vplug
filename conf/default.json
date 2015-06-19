@@ -34,6 +34,7 @@
         "api": {
             "create": "http://localhost:8006/vplugs",
             "fetch": "http://localhost:8006/vplugs"
-        }
+        },
+        "threshold": 0.25
     }
 }
