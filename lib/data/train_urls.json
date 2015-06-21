@@ -104,12 +104,18 @@
         "https://github.com/martine/ninja",
         "https://github.com/pebble/git-deploy",
         "https://github.com/zhengkai/vimrc",
+        "https://github.com/sds/.vim",
         "https://github.com/tpopela/apps2desktop",
         "https://github.com/Anthony25/gnome-terminal-colors-solarized",
         "https://github.com/DanielDornhardt/nvimrc",
         "https://github.com/Reyu/NeoVim",
+        "https://github.com/asenchi/dotvim",
         "https://github.com/amix/vimrc",
         "https://github.com/RichiH/vcsh",
+        "https://github.com/marijnh/tern",
+        "https://github.com/vrybas/dotvim",
+        "https://github.com/jamescarr/.vim",
+        "https://github.com/tlync/vimperator-addons",
         "https://github.com/xwsoul/SoulVim"
     ],
     "plugins": [
