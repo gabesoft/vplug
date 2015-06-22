@@ -1,8 +1,10 @@
 {
     "other": [
+        "https://github.com/aaronroyer/shy",
         "https://github.com/fernetbianca/.vimserver",
-        "https://github.com/yanickouellet/vimfiles-windows",
-        "https://github.com/aaronroyer/shy"
+        "https://github.com/kibs/vim-kicks-ass",
+        "https://github.com/sk3l/vim-conf",
+        "https://github.com/yanickouellet/vimfiles-windows"
     ],
     "plugins": [
         "https://github.com/junegunn/vim-plug"
