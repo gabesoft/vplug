@@ -29,8 +29,8 @@
     },
     "tasks": {
         "interval": {
-            "unit": "minutes",
-            "value": 120
+            "unit": "hours",
+            "value": 3
         },
         "interval-error": {
             "unit": "minutes",
