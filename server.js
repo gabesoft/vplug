@@ -11,7 +11,13 @@ var Hapi     = require('hapi')
   , interval = moment.duration(
         conf.get('tasks:interval:value')
       , conf.get('tasks:interval:unit'))
-  , runner   = new Runner({ interval : interval.asMilliseconds() });
+  , intervalError = moment.duration(
+        conf.get('tasks:interval-error:value')
+      , conf.get('tasks:interval-error:unit'))
+  , runner   = new Runner({
+        interval      : interval.asMilliseconds()
+      , intervalError : intervalError.asMilliseconds()
+    });
 
 server.connection({ port : conf.get('app:port') || 8007 });
 

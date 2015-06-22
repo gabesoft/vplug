@@ -17,7 +17,11 @@
     "redis": {
         "expire": {
             "unit": "days",
-            "value": 30
+            "value": 15
+        },
+        "expire-users": {
+            "unit": "days",
+            "value": 60
         },
         "host": "localhost",
         "port": 6379,
@@ -27,6 +31,10 @@
         "interval": {
             "unit": "minutes",
             "value": 120
+        },
+        "interval-error": {
+            "unit": "minutes",
+            "value": 5
         }
     },
     "userAgent": "Ayne-Finder/0.0.1",
