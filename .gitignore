@@ -19,4 +19,5 @@ pids
 results
 tmp
 
-conf/github.json
+github.json
+production.json
