@@ -5,6 +5,7 @@
         "https://github.com/kibs/vim-kicks-ass",
         "https://github.com/sk3l/vim-conf",
         "https://github.com/afni/afni",
+        "https://github.com/dmtcp/dmtcp",
         "https://github.com/yanickouellet/vimfiles-windows"
     ],
     "plugins": [
