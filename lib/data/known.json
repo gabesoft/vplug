@@ -10,6 +10,7 @@
         "https://github.com/yanickouellet/vimfiles-windows"
     ],
     "plugins": [
+        "https://github.com/wincent/ferret",
         "https://github.com/junegunn/vim-plug"
     ]
 }

@@ -145,6 +145,7 @@
     "plugins": [
         "https://github.com/29decibel/vim-stringify",
         "https://github.com/aaronbieber/vim-quicktask",
+        "https://github.com/wincent/ferret",
         "https://github.com/actionshrimp/vim-xpath",
         "https://github.com/airblade/vim-gitgutter",
         "https://github.com/aldafu/vim-widl",
